@@ -1,14 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
 @media screen and (max-width: 500px) and (min-width: 0px) {
   .row {
-    height: 270px;
-    max-width: 960px;
+    height: 250px;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
-
   }
 }
 
@@ -17,35 +12,75 @@ body {
 }
 
 .header {
-  background-color: rgb(240, 237, 233);
+  position: relative;
+  max-width: 1000px;
   height: 250px;
+  margin: 10px auto;
 }
 
 .header-bar {
   font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
   align-items: center;
 }
 
-.header-title {
-  font-size: 25px;
-  padding: 5px;
+#header-title {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  letter-spacing: 2px;
 }
 
-.flex {
+.nav {
   display: flex;
-  justify-content: space-around;
   list-style: none;
 }
 
-.header-nav {
-  width: 500px;
-  margin: 0 auto;
+nav li {
+  margin-left: 60px;
 }
 
+.header-nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 
+.content-img {
+background-color: rgb(231, 230, 227);
+display: flex;
+align-items: center;
+justify-content: center;
+height: 400px;
+}
 
 .container {
-  background-color: blanchedalmond;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+#section1 {
+  background-color: rgb(180, 179, 177);
+}
+#section2 {
+  background-color: rgb(206, 204, 201);
+}
+#section3 {
+  background-color: rgb(148, 146, 144);
+}
+#section4 {
+  background-color: rgb(223, 219, 215);
+}
+#section5 {
+  background-color: rgb(150, 149, 147);
+}
+
+.footer-bottom {
+  background-color:white;
+  color:rgb(180, 179, 177);
+  text-align: center;
+  height: 50px;
+  padding: 10px;
 }
