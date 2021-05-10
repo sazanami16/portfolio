@@ -49,30 +49,31 @@ nav li {
 .first-content,
 .third-content,
 .forth-content {
-background-color: rgb(231, 230, 227);
-display: flex;
-opacity: 1;
+  width: 100%;
+  background-color: rgb(247, 244, 239);
+  display: flex;
 }
 
-.slide-top {
+.js-slide {
   opacity: 0;
-  animation-name: fade-in-top;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
+  transition-duration: 3s;
+  transition-timing-function: ease;
 }
 
-@keyframes fade-in-top {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.js-slide-left {
+  transform: translateX(-50px);
+  
 }
+
+.js-slide-right {
+  transform: translateX(50px);
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 .content-img {
   margin-top: 15px;
