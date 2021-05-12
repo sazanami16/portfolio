@@ -47,10 +47,14 @@ nav li {
 }
 
 .first-content,
-.third-content,
 .forth-content {
   width: 100%;
   background-color: rgb(247, 244, 239);
+  display: flex;
+}
+
+.third-top-content,
+.third-middle-content {
   display: flex;
 }
 

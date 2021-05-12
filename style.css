@@ -51,10 +51,16 @@ nav li {
 }
 
 .first-content,
-.third-content,
 .forth-content {
   width: 100%;
   background-color: #f7f4ef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.third-top-content,
+.third-middle-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
