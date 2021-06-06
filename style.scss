@@ -1,13 +1,26 @@
-@media screen and (max-width: 500px) and (min-width: 0px) {
+@media (max-width: 500px) {
   .row {
     height: 250px;
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
   }
+
+  ul.icons-content {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    gap: 20px;
+  }
 }
 
 body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
@@ -46,8 +59,7 @@ nav li {
   right: 0;
 }
 
-.first-content,
-.forth-content {
+.first-content {
   width: 100%;
   background-color: rgb(247, 244, 239);
   display: flex;
@@ -56,6 +68,10 @@ nav li {
 .third-top-content,
 .third-middle-content {
   display: flex;
+}
+
+.forth-content {
+  width: 100%;
 }
 
 .js-slide {
@@ -101,7 +117,8 @@ img.application-img {
   margin: 0 20px 0 40px;
 }
 
-.text-left {
+.text-left,
+.study-content {
   top: 20px;
   margin: 0 50px;
 }
@@ -120,6 +137,12 @@ img.application-img {
 
 .sub-title {
   letter-spacing: 2px;
+}
+
+ul.icons-content {
+  display: grid;
+  grid-template-columns: repeat(8, 70px);
+  gap: 50px;
 }
 
 
